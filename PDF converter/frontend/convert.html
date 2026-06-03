@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert & Edit Pdf files online</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .logo img {
+            width: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #e63946;
+        }
+
+        .contact-btn {
+            background: #e63946;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .Heading {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 36px;
+            color: #333;
+        }
+
+        .dropsection {
+            width: 55%;
+            height: 260px;
+            border: 2px dashed #bbb;
+            border-radius: 12px;
+            margin: 40px auto;
+            background: white;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            transition: 0.3s;
+        }
+
+        .dropsection:hover {
+            border-color: #e63946;
+        }
+
+        .file-icon {
+            width: 70px;
+            margin-bottom: 30px;
+        }
+
+        .upload-btn {
+            background: #e63946;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .upload-btn:hover {
+            background: #c72d39;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .drop-text {
+            color: #777;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .inst {
+            text-align: center;
+            margin-top: 125px;
+            font-size: 40px;
+            color: black;
+        }
+
+        .instruction-section {
+            width: 80%;
+            justify-content: center;
+            margin: 40px;
+            display: flex;
+            align-items: center;
+            margin-top: -50px;
+            margin-right: 20px;
+        }
+
+        .instruction-section img {
+            width: 450px;
+            height: 350px;
+        }
+
+        .instruction-text h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .instruction-text ol {
+            font-size: 18px;
+            color: #444;
+        }
+
+        .instruction-text li {
+            margin-bottom: 12px;
+        }
+        .footer {
+            background-color: #1f1f1f;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-second a {
+            margin: 0 12px;
+        }
+
+        .footer-second img {
+            width: 28px;
+            height: 28px;
+            filter: invert(1);
+            transition: transform 0.3s ease;
+        }
+
+        .footer-second img:hover {
+            transform: scale(1.2);
+        }
+
+        .footer-rights {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        .footer-number {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #ccc;
+            font-size: 14px;
+        }
+
+        .contact-item img {
+            width: 18px;
+            height: 18px;
+            filter: invert(1);
+        }
+
+        .logo-name {
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+
+        .logo-dot {
+            color: #2f5bff;
+            font-size: 2rem;
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png">
+            PDF Converter
+        </div>
+
+        <div class="nav-links">
+            <a href="convert.html">Convert to PDF</a>
+            <a href="compress.html">Compress PDF</a>
+            <a href="merge.html">Merge PDFs</a>
+        </div>
+
+        <a href="#contact" class="contact-btn">Contact Us</a>
+    </nav>
+
+    <div class="Heading"><b>Convert & Edit Pdf Online</b></div>
+    <div class="dropsection">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" class="file-icon">
+        <label>
+            <input type="file">
+            <button class="upload-btn">Choose or Drop File</button>
+        </label>
+        <div class="drop-text">Drop your PDF here</div>
+    </div>
+    <div class="inst">
+        <b>Instruction:</b>
+    </div>
+    <div class="instruction-section">
+        <img src="image.png" alt="PDF convert">
+        <div class="instruction-text">
+            <ol>
+                <li>Upload or drag & drop your PDF file.</li>
+                <li>Select convert, merge or compress option.</li>
+                <li>Click convert to start processing.</li>
+                <li>Wait for the file to finish.</li>
+                <li>Download your new PDF file.</li>
+            </ol>
+        </div>
+    </div>
+
+    <footer id="contact" id ="contact">
+        <div class="footer">
+
+            <div class="footer-second">
+
+                <a href="https://www.linkedin.com/in/chiragrewaliya030306" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg" alt="LinkedIn">
+                </a>
+
+
+                <a href="https://github.com/ChiragRewaliya336" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub">
+                </a>
+
+
+                <a href="https://www.instagram.com/chintu_rewaliya_0206" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="Instagram">
+                </a>
+            </div>
+            <div class="footer-number">
+               
+            <div class="footer-rights">
+                <p>© Chirag Project. All rights reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
